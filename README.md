@@ -11,8 +11,9 @@
 - Filtro de busca (`Buscar por Autor, Gênero, Título`)
 - Avaliação de livros, bem como adicionar comentários
 - Notificação de aprovação ou reprovação de publicação
-```
 
+```
+##### ⚠️ AVISO: Parte significativa das funcionalidades citadas neste documento estão em desenvolvimento e não foram completamente implementadas.
 
 #### 👤 Níveis de permissão
 
