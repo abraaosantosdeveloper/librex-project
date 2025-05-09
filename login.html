@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/light-login.css" id="css-file" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/brand/logo-light.png" type="image/x-icon">
+    <script>function backHome(){
+      window.location.href = "/index.html"
+    }</script>
+    <title>Login</title>
+
+  </head>
+  <body id="body">
+    <div class="change-theme" id="theme_btn" onclick="changeTheme()"></div>
+    <div class="login-form">
+      <div class="logo"></div>
+      <div class="logo-bg" style="cursor: pointer;" onclick="backHome()" title="homepage"></div>
+      <div class="login-field-set">
+        <h3 class="login-label">Login</h3>
+        <input type="text" class="email-field" id="email_field" placeholder="Email" onfocus="hideMessage()"/>
+        <input type="password" class="password-field" id="password_field" placeholder="Password" onfocus="hideMessage()"/>
+        <p class="password-verifiaction" id="error">Credenciais inválidas.</p>
+        <button class="login-btn" id="login_btn" onclick="login()">Login</button>
+        <div class="divider">
+          <div class="line"></div>
+          <span>or</span>
+          <div class="line"></div>
+        </div>
+        <div class="signup-link">
+          <a href="./signup.html" title="signup">Create a new account</a>
+        </div>
+      </div>
+    </div>
+    <script src="./js/login.js"></script>
+    <script src="./js/login_fetch.js"></script>
+  </body>
+</html>

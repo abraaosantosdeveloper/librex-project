@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/profile_style.css" />
+    <title>Admin profile</title>
+    <link
+      rel="shortcut icon"
+      href="./img/brand/logo-dark.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body id="body"> 
+    <div class="container">
+      <div class="open-menu" onclick="openMenu()"></div>
+      <!-- Navigation -->
+      <nav class="lateral-menu" id="lateral-menu">
+        <div class="close-btn" onclick="closeMenu()"></div>
+        <div class="logo"></div>
+        <ul class="menu-list">
+          <li class="profile" onclick="selectPage('profile')" id="profile-link">Perfil</li>
+          <li class="my-bookshelf" onclick="selectPage('bookshelf')" id="bookshelf-link">
+            Biblioteca
+          </li>
+          <!-- <li class="my-bookshelf" onclick="selectPage('favorite')" id="favorite-link">
+            Favoritos
+          </li> -->
+          <li class="inbox" onclick="selectPage('inbox')" id="inbox-link">Caixa de entrada</li>
+        </ul>
+      </nav>
+
+      <main class="main-section" id="content">
+
+      </main>
+    </div>
+    
+    <script src="./js/add_book.js"></script>
+    <script src="./js/user_administration.js"></script>
+    <script src="./js/fetch_books.js"></script>
+    <script src="./js/add_book_modal.js"></script>
+    <script src="./js/profile-page-links.js"></script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/homepage.css " />
+    <script>
+      function toLogin() {
+        window.location.href = "login.html";
+      }
+    </script>
+    <title>Librex - Home</title>
+  </head>
+  <body onload="fetchBooksNoSection()" id="body">
+    <div class="header">
+      <div class="brand">
+        <div class="logo"></div>
+        <h1>Librex</h1>
+      </div>
+
+      <div class="login">
+        <button
+          class="login-btn"
+          id="login_btn"
+          onclick="toLogin()"
+          style="width: 6rem; height: 2rem"
+        >
+          Login
+        </button>
+      </div>
+    </div>
+    <div class="catalog" id="catalog"></div>
+
+    <div class="book-info-modal" id="book_info_modal">
+      <div class="modal-header">
+        <h3 id="title-in-modal">Book Title</h3>
+        <button id="close"></button>
+      </div>
+
+      <div class="bookInfo">
+        <p id="synopsis-in-modal"></p>
+
+        <div class="comment-header">
+          <h4>Feedbacks</h4>
+        </div>
+        <hr />
+        <div id="evaluations-list" class="evaluations-container">
+
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/fetch_books.js"></script>
+  </body>
+</html>

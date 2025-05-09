@@ -1,0 +1,120 @@
+.signup-form{
+    border: 1px solid var(--background-grey);
+    min-height: 450px;
+    height: auto;
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    font-family: Space Grotesk;
+    font-weight: 500;
+    color: var(--dark-blue);
+    padding: 1rem;
+    margin: 4rem auto;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 1px 2px 5px var(--background-grey);
+}
+
+.logo{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    background-image: url(../img/brand/logo-dark.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+    top: -2rem;
+    border: 1px solid var(--background-grey);
+    border-radius: 50%;
+    background-color: #fff;
+    
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    gap: 1rem;
+    width: 90%;
+    border-bottom: 1px solid var(--background-grey);
+    padding: 1rem;
+    margin: 2rem auto;
+}
+
+.avatar{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url(../img/icons/user.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.displayname{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.input-field {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+    color: #002d5f;
+}
+
+input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 1rem;
+    color: var(--grey)
+}
+
+
+.signup-btn{
+    background-color: var(--dark-blue);
+    outline: 0;
+    border: 0;
+    height: 2rem;
+    width: 7rem;
+    color: #fff;
+    font-family: Space Grotesk;
+    font-weight: 500;
+    border-radius: 6px;
+    margin: .5rem auto;
+    cursor: pointer;
+    transition: background .1s ease;
+}
+
+.signup-btn:hover{
+    background-color: var(--lighter-dark-blue);
+    box-shadow: 0 0 5px var(--lighter-dark-blue);
+}
+
+
+/* Layout para telas pequenas (celulares) */
+@media (max-width: 800px) {
+    .signup-form{
+        max-width: 90%;
+        border: 0;
+        box-shadow: none;
+    }
+
+    .input-field {
+        grid-template-columns: 1fr;
+    }
+}

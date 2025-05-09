@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            height: 100vh;
+        }
+        .book-info-modal{
+            border: 2px solid #e4e4e4;
+            border-radius: 6px;
+            max-width: 60vw;
+            max-height: 40vh;
+            position: absolute;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .book-info-modal > button{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-image: url(./img/icons/cross-small.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: rgb(243, 74, 74);
+            border: 0;
+            align-self: flex-end;
+            cursor: pointer;
+            transition: all .0s;
+        }
+
+        .book-info-modal > button:hover{
+            transform: scale(1.2);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="book-info-modal">
+        <button></button>
+        <h3>Book Title</h3>
+        <hr>
+        <p>Synopsis text for testing purposes. This text 
+            does not represent the final infomation or content
+            from the book information, as stored in database.
+        </p>
+    </div>
+</body>
+</html>
